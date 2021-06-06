@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		8446569F2659595C00C48160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446569E2659595C00C48160 /* AppDelegate.swift */; };
 		844656A12659595C00C48160 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844656A02659595C00C48160 /* SceneDelegate.swift */; };
-		844656A32659595C00C48160 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844656A22659595C00C48160 /* ViewController.swift */; };
+		844656A32659595C00C48160 /* ColorSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844656A22659595C00C48160 /* ColorSettingsViewController.swift */; };
 		844656A62659595C00C48160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844656A42659595C00C48160 /* Main.storyboard */; };
 		844656A82659595E00C48160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844656A72659595E00C48160 /* Assets.xcassets */; };
 		844656AB2659595E00C48160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844656A92659595E00C48160 /* LaunchScreen.storyboard */; };
+		844A1349266AC174004F871F /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A1348266AC173004F871F /* MainScreenViewController.swift */; };
+		844A1350266AC446004F871F /* UISlider+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A134F266AC446004F871F /* UISlider+Extension.swift */; };
+		844A1352266AC488004F871F /* UIString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A1351266AC488004F871F /* UIString+Extension.swift */; };
+		844A135B266BA5B9004F871F /* RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A135A266BA5B9004F871F /* RGBA.swift */; };
+		84BD3B85265C2F7200BCE996 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD3B84265C2F7200BCE996 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8446569B2659595C00C48160 /* HomeWork2.2-Colorful_Interface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HomeWork2.2-Colorful_Interface.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8446569E2659595C00C48160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844656A02659595C00C48160 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		844656A22659595C00C48160 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		844656A22659595C00C48160 /* ColorSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSettingsViewController.swift; sourceTree = "<group>"; };
 		844656A52659595C00C48160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		844656A72659595E00C48160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844656AA2659595E00C48160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		844656AC2659595E00C48160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844A1348266AC173004F871F /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		844A134F266AC446004F871F /* UISlider+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISlider+Extension.swift"; sourceTree = "<group>"; };
+		844A1351266AC488004F871F /* UIString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIString+Extension.swift"; sourceTree = "<group>"; };
+		844A1355266B5406004F871F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		844A135A266BA5B9004F871F /* RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBA.swift; sourceTree = "<group>"; };
+		84BD3B84265C2F7200BCE996 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,68 @@
 		8446569D2659595C00C48160 /* HomeWork2.2-Colorful_Interface */ = {
 			isa = PBXGroup;
 			children = (
-				8446569E2659595C00C48160 /* AppDelegate.swift */,
-				844656A02659595C00C48160 /* SceneDelegate.swift */,
-				844656A22659595C00C48160 /* ViewController.swift */,
-				844656A42659595C00C48160 /* Main.storyboard */,
-				844656A72659595E00C48160 /* Assets.xcassets */,
-				844656A92659595E00C48160 /* LaunchScreen.storyboard */,
-				844656AC2659595E00C48160 /* Info.plist */,
+				844A1359266BA5A7004F871F /* Model */,
+				844A1355266B5406004F871F /* Info.plist */,
+				844A134D266AC3DD004F871F /* Supported File */,
+				844A134E266AC3F2004F871F /* Source */,
+				844A134B266AC3BD004F871F /* ViewController */,
+				844A134C266AC3CF004F871F /* UI */,
+				844A134A266AC3A8004F871F /* Extension */,
 			);
 			path = "HomeWork2.2-Colorful_Interface";
+			sourceTree = "<group>";
+		};
+		844A134A266AC3A8004F871F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				84BD3B84265C2F7200BCE996 /* UIColor+Extension.swift */,
+				844A134F266AC446004F871F /* UISlider+Extension.swift */,
+				844A1351266AC488004F871F /* UIString+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		844A134B266AC3BD004F871F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				844656A22659595C00C48160 /* ColorSettingsViewController.swift */,
+				844A1348266AC173004F871F /* MainScreenViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		844A134C266AC3CF004F871F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				844656A42659595C00C48160 /* Main.storyboard */,
+				844656A92659595E00C48160 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		844A134D266AC3DD004F871F /* Supported File */ = {
+			isa = PBXGroup;
+			children = (
+				8446569E2659595C00C48160 /* AppDelegate.swift */,
+				844656A02659595C00C48160 /* SceneDelegate.swift */,
+			);
+			path = "Supported File";
+			sourceTree = "<group>";
+		};
+		844A134E266AC3F2004F871F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				844656A72659595E00C48160 /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		844A1359266BA5A7004F871F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				844A135A266BA5B9004F871F /* RGBA.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +200,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844656A32659595C00C48160 /* ViewController.swift in Sources */,
+				844A1349266AC174004F871F /* MainScreenViewController.swift in Sources */,
+				844656A32659595C00C48160 /* ColorSettingsViewController.swift in Sources */,
 				8446569F2659595C00C48160 /* AppDelegate.swift in Sources */,
+				844A1352266AC488004F871F /* UIString+Extension.swift in Sources */,
 				844656A12659595C00C48160 /* SceneDelegate.swift in Sources */,
+				844A1350266AC446004F871F /* UISlider+Extension.swift in Sources */,
+				84BD3B85265C2F7200BCE996 /* UIColor+Extension.swift in Sources */,
+				844A135B266BA5B9004F871F /* RGBA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +355,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "HomeWork2.2-Colorful_Interface/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +373,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "HomeWork2.2-Colorful_Interface/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
